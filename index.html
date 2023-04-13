@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentanción Tecnica de Python</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/custom-icons.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/sharp-solid.css" rel="stylesheet"> 
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Documentación de Python <span><i class="fa-brands fa-python"></i></span></header>
+        <ul>
+            <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
+            <li><a class="nav-link" href="#Instalacion_y_Configuracion">Instalacion y Configuracion</a></li>
+            <li><a class="nav-link" href="#Variables_y_tipos_de_datos">Variables y tipos de datos</a></li>
+            <li><a class="nav-link" href="#Operadores_y_expresiones">Operadores y expresiones</a></li>
+            <li><a class="nav-link" href="#Estructuras_de_control">Estructuras de control</a></li>
+            <li><a class="nav-link" href="#Funciones">Funciones</a></li>
+            <li><a class="nav-link" href="#Programacion_orientada_a_objetos">Programacion orientada a objetos</a></li>
+            <li><a class="nav-link" href="#Herencia">Herencia</a></li>
+            <li><a class="nav-link" href="#Modulos_y_paquetes">Modulos y paquetes</a></li>
+            <li><a class="nav-link" href="#Referencias">Referencias</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <header>Introduccion</header>
+            <article>
+                <h3>¿Qué es Python?</h3>
+                <p>Python es un lenguaje de programación de alto nivel, interpretado y orientado a objetos. Fue creado
+                    en 1991 por Guido van Rossum y es ampliamente utilizado en la programación de scripts, desarrollo
+                    web, inteligencia artificial y ciencia de datos.</p>
+                <p>Python es un lenguaje muy popular debido a su sintaxis clara y fácil de entender, su amplia gama de
+                    bibliotecas y módulos disponibles y su capacidad para trabajar con diferentes sistemas operativos.
+                </p>
+                <h3>¿Para que es utiliza Python?</h3>
+                <p>Python se utiliza para una gran variedad de aplicaciones, desde desarrollo web hasta análisis de
+                    datos, inteligencia artificial y aprendizaje automático. También es muy popular en la enseñanza de
+                    la programación debido a su sintaxis clara y legible.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Instalacion_y_Configuracion">
+            <header>Instalacion y Configuracion</header>
+            <article>
+                <p>Para empezar a programar en Python, primero debes instalar el intérprete de Python en tu ordenador.
+                    Puedes descargar la última versión de Python desde el sitio web oficial: <a
+                        href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a>
+                </p>
+                <p>Una vez que hayas descargado e instalado Python, puedes ejecutar el intérprete de Python desde la
+                    línea de comandos. Para hacerlo, abre una ventana de terminal o consola y escribe 'python'. Esto te
+                    llevará al intérprete de Python, donde puedes escribir código Python y ejecutarlo.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Variables_y_tipos_de_datos">
+            <header>Variables y tipos de datos</header>
+            <article>
+                <p>Una variable es un nombre que se utiliza para hacer referencia a un valor en la memoria de la computadora. En Python, no es necesario declarar una variable antes de utilizarla, simplemente se le asigna un valor.</p>
+                <p>Para asignar un valor a una variable en Python, puedes utilizar el signo de igual (=). Por ejemplo:
+                </p>
+                <code>
+                    # Ejemplo de declaración de variables<br>
+                    x = 5<br>
+                    y = "Hola, mundo!"
+                </code>
+                <p>Python admite varios tipos de datos, cada uno de los cuales puede ser útil en diferentes situaciones. A continuación, te explicaré los tipos de datos más comunes en Python:</p>
+                <ul>
+                    <li>
+                        <h3>Números</h3>
+                        <p>En Python, existen tres tipos de números:</p>
+                        <ol>
+                            <li>Enteros (int): representan números enteros, como 1, 2, 3, etc.</li>
+                            <li>Números de punto flotante (float): representan números con decimales, como 1.2, 3.14, etc.</li>
+                            <li>Números complejos (complex): representan números complejos, como 3 + 4j, donde 3 es la parte real y 4j es la parte imaginaria.</li>
+                        </ol>
+                        <code>
+                            a = 10  # entero <br>
+                            b = 3.14  # punto flotante <br>
+                            c = 3 + 4j  # complejo <br>
+                        </code>
+                    </li>
+                    <li>
+                        <h3>Booleanos</h3>
+                        <p>El tipo de dato 'bool' representa dos valores: 'True' (verdadero) y 'False' (falso). Estos valores son útiles en las expresiones condicionales y las operaciones lógicas.</p>
+                        <code>
+                            x = True <br>
+                            y = False
+                        </code>
+                    </li>
+                    <li>
+                        <h3>Cadena de caracteres</h3>
+                        <p>El tipo de dato 'str' representa una cadena de caracteres. Una cadena es una secuencia de caracteres entre comillas simples ('...') o comillas dobles ("...").</p>
+                        <code>
+                            saludo = 'Hola'<br>
+                            nombre = "Juan"
+                        </code>
+                    </li>
+                    <li>
+                        <h3>Listas</h3>
+                        <p>El tipo de dato 'list' representa una lista de elementos. Los elementos pueden ser de cualquier tipo de datos. Las listas son mutables, lo que significa que se pueden agregar, eliminar o modificar elementos después de su creación.</p>
+                        <code>mi_lista = [1, 2, 3, 'a', 'b', 'c']</code>
+                    </li>
+                    <li>
+                        <h3>Tuplas</h3>
+                        <p>El tipo de dato 'tuple' representa una secuencia de elementos. Los elementos pueden ser de cualquier tipo de datos. A diferencia de las listas, las tuplas son inmutables, lo que significa que no se pueden agregar, eliminar o modificar elementos después de su creación.</p>
+                        <code>mi_tupla = (1, 2, 3, 'a', 'b', 'c')</code>
+                    </li>
+                    <li>
+                        <h3>Diccionarios</h3>
+                        <p>El tipo de dato 'dict' representa un conjunto de pares clave-valor. Cada clave debe ser única en el diccionario, y los valores pueden ser de cualquier tipo de datos.</p>
+                        <code>mi_diccionario = {'nombre': 'Juan', 'edad': 25, 'ciudad': 'Madrid'}</code>
+                    </li>
+                    <li>
+                        <h3>Conjuntos
+                        </h3>
+                        <p>El tipo de dato 'set' representa un conjunto de elementos únicos. Los elementos pueden ser de cualquier tipo de datos.</p>
+                        <code>mi_conjunto = {1, 2, 3, 'a', 'b', 'c'}</code>
+                    </li>
+                </ul>
+                <p>En Python, hay varios tipos de datos que se utilizan para representar diferentes tipos de información. Los tipos de datos más comunes son los números, booleanos, cadenas, listas, tuplas, diccionarios y conjuntos. Es importante comprender los diferentes tipos de datos y cómo se pueden utilizar en diferentes situaciones para escribir código eficiente y efectivo.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Operadores_y_expresiones">
+            <header>Operadores y expresiones</header>
+            <article>
+                <p>En Python, los operadores se utilizan para realizar operaciones sobre valores y variables. Las expresiones son combinaciones de valores, variables y operadores que producen un resultado.</p>
+                <p>A continuación, te presento los principales operadores y expresiones en Python:</p>
+                <ul>
+                    <li>
+                        <h3>Operadores aritméticos</h3>
+                        <ul>
+                            <li>'+' : suma dos valores</li>
+                            <li>'-' : resta dos valores</li>
+                            <li>'*' : multiplica dos valores</li>
+                            <li>'/' : divide dos valores</li>
+                            <li>'//' : devuelve la división entera de dos valores</li>
+                            <li>'%' : devuelve el resto de la división de dos valores</li>
+                            <li>'**' : eleva un valor a una potencia</li>
+                        </ul>
+                        <code>
+                            a = 10 <br>
+                            b = 5 <br>
+                            suma = a + b  # 15 <br>
+                            resta = a - b  # 5 <br>
+                            multiplicacion = a * b  # 50 <br>
+                            division = a / b  # 2.0 <br>
+                            division_entera = a // b  # 2 <br>
+                            resto = a % b  # 0 <br>
+                            potencia = a ** b  # 100000
+                        </code>
+                    </li>
+                    <li>
+                        <h3>Operadores de comparación</h3>
+                        <ul>
+                            <li>'== ': devuelve 'True' si dos valores son iguales, 'False' en caso contrario</li>
+                            <li>'!=' : devuelve 'True' si dos valores son diferentes, 'False' en caso contrario</li>
+                            <li>'>' : devuelve 'True' si el primer valor es mayor que el segundo, 'False' en caso contrario</li>
+                            <li>'<' : devuelve 'True' si el primer valor es menor que el segundo, 'False' en caso contrario</li>
+                            <li>'>=' : devuelve 'True' si el primer valor es mayor o igual que el segundo, 'False' en caso contrario</li>
+                            <li><'=' : devuelve 'True' si el primer valor es menor o igual que el segundo, 'False' en caso contrario</li>
+                        </ul>
+                        <code>
+                            a = 10 <br>
+                            b = 5 <br>
+                            igual = a == b  # False <br>
+                            diferente = a != b  # True <br>
+                            mayor = a > b  # True <br>
+                            menor = a < b  # False <br>
+                            mayor_igual = a >= b  # True <br>
+                            menor_igual = a <= b  # False
+                        </code>
+                    </li>
+                    <li>
+                        <h3>Operadores lógicos</h3>
+                        <ul>
+                            <li>'and' : devuelve 'True' si ambas expresiones son verdaderas, 'False' en caso contrario</li>
+                            <li>'or' : devuelve 'True' si alguna de las expresiones es verdadera, 'False' en caso contrario</li>
+                            <li>'not' : devuelve el valor opuesto de la expresión</li>
+                        </ul>
+                        <code>
+                            a = 10 <br>
+                            b = 5 <br>
+                            c = 3 <br>
+                            y = a > b and b > c  # True <br>
+                            z = a < b or b < c  # False <br>
+                            w = not (a == b)  # True
+                        </code>
+                    </li>
+                    <li>
+                        <h3>Expresiones condicionales</h3>
+                        <p>Las expresiones condicionales se utilizan para tomar decisiones en función del resultado de una expresión. En Python, las expresiones condicionales se escriben utilizando el operador ternario 'if-else':</p>
+                        <code>
+                            valor = 10 <br>
+                            resultado = 'mayor' if valor > 5 else 'menor o igual'
+                        </code>
+                    </li>
+                </ul>
+                <p>Los operadores y expresiones son fundamentales en Python para realizar cálculos, comparaciones y tomar decisiones. Los operadores aritméticos se utilizan para realizar operaciones matemáticas, los operadores de comparación se utilizan para comparar valores y los operadores lógicos se utilizan para realizar operaciones lógicas</p>
+            </article>
+        </section>
+        <section class="main-section" id="Estructuras_de_control">
+            <header>Estructuras de control</header>
+            <article>
+                <p>En Python, existen varias estructuras de control que nos permiten controlar el flujo de ejecución de un programa. Estas estructuras nos permiten tomar decisiones y repetir acciones en función de ciertas condiciones.</p>
+                <p>A continuación, te presento las principales estructuras de control en Python:</p>
+                <h3>Estructura condicional if</h3>
+                <p>La estructura condicional 'if' se utiliza para ejecutar una acción en caso de que se cumpla una condición. La sintaxis básica es la siguiente:</p>
+                <code>
+                    if condicion: <br>
+                    &nbsp;# acciones a realizar si la condición es verdadera
+                </code>
+                <code>
+                    a = 10 <br>
+                    if a > 5: <br>
+                    &nbsp;print("a es mayor que 5")
+                </code>
+                <p>También es posible utilizar la estructura if-else para ejecutar una acción en caso de que la condición no se cumpla:</p>
+                <code>
+                    if condicion: <br>
+                    &nbsp;# acciones a realizar si la condición es verdadera <br>
+                    else: <br>
+                    &nbsp;# acciones a realizar si la condición es falsa
+                </code>
+                <p>Ejemplo:</p>
+                <code>
+                    a = 3 <br>
+                    if a > 5: <br>
+                    &nbsp;print("a es mayor que 5") <br>
+                    else: <br>
+                    &nbsp;print("a es menor o igual que 5")
+                </code>
+                <p>También es posible utilizar la estructura 'if-elif-else' para evaluar varias condiciones en cascada:</p>
+                <code>
+                    if condicion1: <br>
+                    &nbsp;# acciones a realizar si la condición 1 es verdadera <br>
+                    elif condicion2: <br>
+                    &nbsp;# acciones a realizar si la condición 2 es verdadera <br>
+                    else: <br>
+                    &nbsp;# acciones a realizar si ninguna condición es verdadera
+                </code>
+                <p>Ejemplo:</p>
+                <code>
+                    a = 10 <br>
+                    if a > 15: <br>
+                    &nbsp;print("a es mayor que 15") <br>
+                    elif a > 5: <br>
+                    &nbsp;print("a es mayor que 5 pero menor o igual que 15") <br>
+                    else: <br>
+                    &nbsp;print("a es menor o igual que 5")
+                </code>
+                <h3>Estructuras de repetición while y for</h3>
+                <p>Las estructuras de repetición nos permiten ejecutar un bloque de código varias veces en función de ciertas condiciones.</p>
+                <p>La estructura 'while' se utiliza para repetir un bloque de código mientras se cumpla una condición:</p>
+                <code>
+                    while condicion: <br>
+                    &nbsp;# acciones a realizar mientras la condición sea verdadera
+                </code>
+                <p>Ejemplo:</p>
+                <code>
+                    a = 0 <br>
+                    while a < 5: <br>
+                    &nbsp;print(a) <br>
+                    &nbsp;a += 1
+                </code>
+                <p>La estructura 'for' se utiliza para iterar sobre una secuencia de elementos:</p>
+                <code>
+                    for elemento in secuencia: <br>
+                    &nbsp;# acciones a realizar para cada elemento de la secuencia
+                </code>
+                <p>Ejemplo:</p>
+                <code>
+                    numeros = [1, 2, 3, 4, 5] <br>
+                    for numero in numeros: <br>
+                    &nbsp;print(numero)
+                </code>
+                <h3>Control de flujo break y continue</h3>
+                <p>El control de flujo 'break' se utiliza para salir de una estructura de repetición en el momento en que se cumple una cierta condición:</p>
+                <code>
+                    while condicion: <br>
+                    &nbsp;if condicion_salida: <br>
+                    &nbsp;&nbsp;break <br>
+                    &nbsp;# acciones a realizar mientras la condición sea verdadera
+                </code>
+                <p>Ejemplo:</p>
+                <code>
+                    a = 0 <br>
+                    while True: <br>
+                    &nbsp;if a >= 5: <br>
+                    &nbsp;&nbsp;break <br>
+                    &nbsp;print(a) <br>
+                    &nbsp;a += 1
+                </code>
+                <p>El control de flujo continue se utiliza para saltar a la siguiente iteración en una estructura de repetición en el momento en que se cumple una cierta condición:</p>
+                <code>
+                    for elemento in secuencia: <br>
+                    &nbsp;if condicion_salto: <br>
+                    &nbsp;&nbsp;continue <br>
+                    &nbsp;# acciones a realizar para cada elemento de la secuencia
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Funciones">
+            <header>Funciones</header>
+            <article>
+                <p> Las funciones en Python son bloques de código que pueden ser llamados en cualquier lugar del programa para realizar una tarea específica. Las funciones pueden tomar argumentos de entrada y pueden devolver un resultado.</p>
+                <p>Aquí hay un ejemplo de una función en Python que toma dos argumentos y devuelve su suma:</p>
+                <code>
+                    def sumar(a, b): <br>
+                    &nbsp;resultado = a + b <br>
+                    &nbsp;return resultado
+                </code>
+                <p>En este ejemplo, la función 'sumar' toma dos argumentos 'a' y 'b'. Dentro de la función, se realiza la operación de suma y el resultado se almacena en la variable 'resultado'. Luego, la función devuelve el valor de 'resultado'.</p>
+                <p>Para llamar a esta función, podemos hacer lo siguiente:</p>
+                <code>
+                    resultado_suma = sumar(2, 3) <br>
+                    print(resultado_suma)  # Salida: 5
+                </code>
+                <p>Aquí, llamamos a la función 'sumar' con los argumentos '2' y '3'. La función devuelve '5', que se almacena en la variable 'resultado_suma' y luego se imprime en la pantalla.</p>
+                <p>Además de los argumentos, las funciones en Python también pueden tener valores de parámetros predeterminados y argumentos de longitud variable. Aquí hay un ejemplo de una función con argumentos de longitud variable:</p>
+                <code>
+                    def imprimir_nombres(*nombres): <br>
+                    &nbsp;for nombre in nombres: <br>
+                    &nbsp;&nbsp;print(nombre)
+                </code>
+                <p>En este ejemplo, la función 'imprimir_nombres' toma un número variable de argumentos 'nombres'. Dentro de la función, se utiliza un bucle 'for' para iterar a través de cada uno de los argumentos y se imprime cada uno de ellos en la pantalla.</p>
+                <p>Para llamar a esta función, podemos hacer lo siguiente:</p>
+                <code>imprimir_nombres('Juan', 'María', 'Carlos')</code>
+                <p>Aquí, llamamos a la función 'imprimir_nombres' con tres argumentos: 'Juan', 'María' y 'Carlos'. La función itera a través de los argumentos y los imprime en la pantalla.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Programacion_orientada_a_objetos">
+            <header>Programacion orientada a objetos</header>
+            <article>
+                <p>La programación orientada a objetos (POO) es un paradigma de programación que se basa en la creación de objetos que tienen propiedades y métodos asociados. Python es un lenguaje orientado a objetos, lo que significa que se pueden crear clases y objetos en el programa.</p>
+                <p>Para crear una clase en Python, se utiliza la palabra clave 'class'. Aquí hay un ejemplo de una clase 'Persona' que tiene una propiedad 'nombre' y un método 'saludar':</p>
+                <code>
+                    class Persona: <br>
+                    &nbsp;def __init__(self, nombre): <br>
+                    &nbsp;&nbsp;elf.nombre = nombre <br>
+                
+                    &nbsp;def saludar(self): <br>
+                    &nbsp;&nbsp;print(f'Hola, mi nombre es {self.nombre}')
+                </code>
+                <p>En este ejemplo, la clase Persona tiene un constructor '__init__ ' que toma un argumento 'nombre'. La propiedad nombre se inicializa con el valor del argumento 'nombre'. La clase también tiene un método 'saludar' que imprime un mensaje de saludo con el valor de 'nombre'.</p>
+                <p>Para crear un objeto de la clase 'Persona', se utiliza el nombre de la clase seguido de paréntesis. Aquí hay un ejemplo de cómo crear un objeto 'persona1' de la clase 'Persona':</p>
+                <code>
+                    persona1 = Persona('Juan')
+                    persona1.saludar()  # Salida: Hola, mi nombre es Juan
+                </code>
+                <p>En este ejemplo, creamos un objeto 'persona1' de la clase 'Persona' con el nombre 'Juan'. Luego llamamos al método 'saludar' del objeto, que imprime el mensaje de saludo con el nombre 'Juan'.</p>
+                <p>Además de las propiedades y métodos, las clases en Python también pueden tener métodos especiales como '__str__' para representar un objeto como una cadena y '__len__' para obtener la longitud de un objeto. También se pueden crear subclases y heredar propiedades y métodos de una clase principal.</p>
+                <p>La programación orientada a objetos en Python puede ser un concepto complejo, pero es una herramienta poderosa para organizar y estructurar programas.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Herencia">
+            <header>Herencia</header>
+            <article>
+                <p>La herencia es una característica importante de la programación orientada a objetos que permite crear nuevas clases basadas en una clase existente, con la capacidad de agregar o modificar sus propias propiedades y métodos.</p>
+                <p>En Python, para crear una subclase que hereda de una clase principal, simplemente se define una nueva clase y se especifica la clase principal entre paréntesis después del nombre de la nueva clase. Por ejemplo, si tenemos una clase 'Animal' que tiene una propiedad 'nombre' y un método 'hacer_sonido', podemos crear una subclase 'Perro' que hereda de la clase 'Animal' y agrega un nuevo método 'ladrar':</p>
+                <code>
+                    class Animal: <br>
+                    &nbsp;def __init__(self, nombre): <br>
+                    &nbsp;&nbsp;self.nombre = nombre <br>
+                
+                    &nbsp;def hacer_sonido(self): <br>
+                    &nbsp;&nbsp;pass  # Este método se define en las subclases <br>
+                
+                    class Perro(Animal): <br>
+                    &nbsp;def ladrar(self): <br>
+                    &nbsp;&nbsp;print('¡Guau!')
+                    </code>
+                    <p>En este ejemplo, la subclase 'Perro' hereda de la clase 'Animal' mediante la especificación de 'Animal' entre paréntesis después del nombre de la nueva clase. La subclase 'Perro' también tiene un nuevo método 'ladrar' que imprime el mensaje '¡Guau!'.</p>
+                    <p>Podemos crear objetos de la clase Perro y llamar a sus métodos:</p>
+                    <code>
+                        mi_perro = Perro('Fido') <br>
+                        print(mi_perro.nombre)  # Salida: Fido <br>
+                        mi_perro.hacer_sonido()  # Este método no hace nada en esta clase <br>
+                        mi_perro.ladrar()        # Salida: ¡Guau!
+                    </code>
+                    <p>En este ejemplo, creamos un objeto 'mi_perro' de la clase 'Perro' con el nombre 'Fido'. Podemos acceder a la propiedad 'nombre' del objeto, que es heredada de la clase 'Animal'. También llamamos al método 'hacer_sonido', que está definido en la clase principal 'Animal', pero no hace nada en la subclase 'Perro'. Finalmente, llamamos al método 'ladrar', que es específico de la subclase 'Perro'.</p>
+                    <p>La herencia en Python es una herramienta muy útil para organizar y estructurar programas orientados a objetos. Permite reutilizar código y definir clases más específicas a partir de clases generales existentes.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Modulos_y_paquetes">
+            <header>Modulos y paquetes</header>
+            <article>
+                <p>En Python, un módulo es un archivo que contiene código de Python que se puede reutilizar en otros programas. Un paquete es una colección de módulos relacionados que se organizan en una estructura de directorios.</p>
+                <p>Los módulos y paquetes en Python se importan en otros programas usando la palabra clave 'import'. Por ejemplo, si tenemos un módulo llamado 'mimodulo.py' con una función llamada 'mi_funcion', podemos importar la función en otro programa de la siguiente manera:</p>
+                <code>
+                    import mimodulo <br><br>
+
+                    mimodulo.mi_funcion()
+                </code>
+                <p>En este ejemplo, estamos importando el módulo mimodulo y llamando a su función mi_funcion.<br>También es posible importar sólo una función específica de un módulo, usando la sintaxis from modulo import funcion. Por ejemplo, si queremos importar sólo la función mi_funcion del módulo mimodulo, podemos hacerlo de la siguiente manera:</p>
+                <code>
+                    from mimodulo import mi_funcion <br><br>
+
+                    mi_funcion()
+                </code>
+                <p>En este ejemplo, estamos importando la función 'mi_funcion' directamente del módulo 'mimodulo' y llamándola directamente sin tener que usar el nombre del módulo.</p>
+                <p>A continuación te explico un poco más sobre los módulos y paquetes más utilizados en Python:</p>
+                <br>
+                <h3>Módulo math</h3>
+                <p>El módulo 'math' proporciona funciones matemáticas básicas, como trigonométricas, exponenciales, logarítmicas, entre otras. A continuación, un ejemplo de cómo utilizar algunas de estas funciones:</p>
+                <code>
+                    import math <br><br>
+
+                    x = 2 <br>
+                    y = 3 <br><br>
+                    
+                    # Funciones trigonométricas <br>
+                    print(math.sin(x)) <br>
+                    print(math.cos(x)) <br>
+                    print(math.tan(x)) <br>
+                    print(math.atan(x)) <br> <br>
+                    
+                    # Funciones exponenciales y logarítmicas <br>
+                    print(math.exp(x)) <br>
+                    print(math.log(x)) <br>
+                    print(math.log10(x)) <br><br>
+                    
+                    # Otras funciones <br>
+                    print(math.sqrt(x)) <br>
+                    print(math.ceil(x/y)) <br>
+                    print(math.floor(x/y))
+                </code>
+                <br>
+                <h3>Módulo NumPy</h3>
+                <p>NumPy es un paquete que proporciona herramientas para trabajar con arrays multidimensionales y matrices. Es muy utilizado en la computación científica y el análisis de datos. A continuación, un ejemplo de cómo utilizar NumPy para crear un array y realizar algunas operaciones:</p>
+                <code>
+                    import numpy as np <br><br>
+
+                    # Crear un array <br>
+                    x = np.array([1, 2, 3, 4, 5]) <br><br>
+                    
+                    # Operaciones con arrays <br>
+                    print(x + 1) <br>
+                    print(x * 2) <br>
+                    print(np.sin(x)) <br><br>
+                    
+                    # Operaciones entre arrays <br>
+                    y = np.array([5, 4, 3, 2, 1]) <br>
+                    print(x + y) <br>
+                    print(x * y) <br>
+                    print(np.dot(x, y))
+                </code>
+                <br>
+                <h3>Módulo pandas</h3>
+                <p>Pandas es un paquete que proporciona herramientas para el análisis de datos y la manipulación de datos en formato tabular. Es muy utilizado en la ciencia de datos y el aprendizaje automático. A continuación, un ejemplo de cómo utilizar pandas para cargar un archivo CSV y realizar algunas operaciones:</p>
+                <code>
+                    import pandas as pd <br><br>
+
+                    # Cargar un archivo CSV <br>
+                    data = pd.read_csv("datos.csv") <br><br>
+                    
+                    # Mostrar los primeros registros <br>
+                    print(data.head()) <br><br>
+                    
+                    # Selección de columnas <br>
+                    x = data["columna1"] <br>
+                    y = data["columna2"] <br><br>
+                    
+                    # Operaciones entre columnas <br>
+                    z = x + y <br>
+                    print(z)
+                </code>
+                <p>Los módulos y paquetes son una parte fundamental de Python, ya que proporcionan herramientas para trabajar con diferentes tipos de datos y realizar diferentes operaciones. El módulo 'math' proporciona funciones matemáticas básicas, NumPy proporciona herramientas para trabajar con arrays multidimensionales y matrices, y pandas proporciona herramientas para el análisis de datos y la manipulación de datos en formato tabular. Estos son solo algunos de los muchos módulos y paquetes disponibles en Python, y es importante explorar y utilizar diferentes herramientas según las necesidades de cada proyecto.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Referencias">
+            <header>Referencias</header>
+            <article>
+                <ol>
+                    <li>La documentación oficial de Python: <a href="https://docs.python.org/">https://docs.python.org/</a></li>
+                    <li>La guía de estilo de código de Python (PEP 8): <a href="https://www.python.org/dev/peps/pep-0008/">https://www.python.org/dev/peps/pep-0008/</a></li>
+                </ol>
+            </article>
+        </section>
+    </main>
+    <button class="btn-scrolltop" id="btn_scrolltop">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    <script src="https://kit.fontawesome.com/a44f73be21.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
